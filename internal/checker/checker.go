@@ -7703,6 +7703,8 @@ func getUniqueTypeParameterName(typeParameters []*Type, baseName string) string 
 
 func (c *Checker) checkExpressionWorker(node *ast.Node, checkMode CheckMode) *Type {
 	switch node.Kind {
+	case ast.KindJinjaVariable:
+		return c.anyType
 	case ast.KindIdentifier:
 		return c.checkIdentifier(node, checkMode)
 	case ast.KindPrivateIdentifier:
@@ -16676,6 +16678,10 @@ func (c *Checker) getTypeForVariableLikeDeclaration(declaration *ast.Node, inclu
 	// typed function, use the type implied by the binding pattern
 	if ast.IsBindingPattern(declaration.Name()) {
 		return c.getTypeFromBindingPattern(declaration.Name() /*includePatternInType*/, false /*reportErrors*/, true)
+	}
+
+	if initializer := declaration.Initializer(); initializer != nil && initializer.Kind == ast.KindJinjaVariable {
+		return c.anyType
 	}
 	// No type specified and nothing can be inferred
 	return nil

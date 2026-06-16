@@ -57,6 +57,7 @@ type NodeFactory struct {
 	propertySignatureDeclarationArena  core.Arena[PropertySignatureDeclaration]
 	returnStatementArena               core.Arena[ReturnStatement]
 	stringLiteralArena                 core.Arena[StringLiteral]
+	jinjaVariableArena                 core.Arena[JinjaVariable]
 	tokenArena                         core.Arena[Token]
 	typeAliasDeclarationArena          core.Arena[TypeAliasDeclaration]
 	typeLiteralNodeArena               core.Arena[TypeLiteralNode]
@@ -318,6 +319,7 @@ type (
 	OmittedExpressionNode             = Node
 	KeywordExpressionNode             = Node
 	StringLiteralNode                 = Node
+	JinjaVariableNode                 = Node
 	NumericLiteralNode                = Node
 	BigIntLiteralNode                 = Node
 	RegularExpressionLiteralNode      = Node
@@ -541,8 +543,8 @@ type (
 	JsxTagNameExpression           = Node // Identifier | KeywordExpression | PropertyAccessExpression | JsxNamespacedName
 	ClassLikeDeclaration           = Node // ClassDeclaration | ClassExpression
 	AccessorDeclaration            = Node // GetAccessorDeclaration | SetAccessorDeclaration
-	LiteralLikeNode                = Node // StringLiteral | NumericLiteral | BigIntLiteral | RegularExpressionLiteral | TemplateLiteralLikeNode | JsxText
-	LiteralExpression              = Node // StringLiteral | NumericLiteral | BigIntLiteral | RegularExpressionLiteral | NoSubstitutionTemplateLiteral
+	LiteralLikeNode                = Node // StringLiteral | JinjaVariable | NumericLiteral | BigIntLiteral | RegularExpressionLiteral | TemplateLiteralLikeNode | JsxText
+	LiteralExpression              = Node // StringLiteral | JinjaVariable | NumericLiteral | BigIntLiteral | RegularExpressionLiteral | NoSubstitutionTemplateLiteral
 	UnionOrIntersectionTypeNode    = Node // UnionTypeNode | IntersectionTypeNode
 	TemplateLiteralLikeNode        = Node // PseudoLiteralSyntaxKind
 	TemplateMiddleOrTail           = Node // TemplateMiddle | TemplateTail
@@ -618,6 +620,7 @@ func IsToken(node *Node) bool {
 	case KindNumericLiteral:
 	case KindBigIntLiteral:
 	case KindStringLiteral:
+	case KindJinjaVariable:
 	case KindJsxText:
 	case KindJsxTextAllWhiteSpaces:
 	case KindRegularExpressionLiteral:
@@ -3775,6 +3778,30 @@ func (node *StringLiteral) Clone(f NodeFactoryCoercible) *Node {
 
 func IsStringLiteral(node *Node) bool {
 	return node.Kind == KindStringLiteral
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// JinjaVariable
+// ──────────────────────────────────────────────────────────────────────
+
+type JinjaVariable struct {
+	LiteralExpressionBase
+}
+
+func (f *NodeFactory) NewJinjaVariable(text string, tokenFlags TokenFlags) *Node {
+	data := f.jinjaVariableArena.New()
+	data.Text = text
+	data.TokenFlags = tokenFlags & TokenFlagsJinjaVariableFlags
+	f.textCount++
+	return f.newNode(KindJinjaVariable, data)
+}
+
+func (node *JinjaVariable) Clone(f NodeFactoryCoercible) *Node {
+	return cloneNode(f.AsNodeFactory().NewJinjaVariable(node.Text, node.TokenFlags), node.AsNode(), f.AsNodeFactory().hooks)
+}
+
+func IsJinjaVariable(node *Node) bool {
+	return node.Kind == KindJinjaVariable
 }
 
 // ──────────────────────────────────────────────────────────────────────
@@ -9129,6 +9156,10 @@ func (n *Node) AsKeywordExpression() *KeywordExpression {
 
 func (n *Node) AsStringLiteral() *StringLiteral {
 	return n.data.(*StringLiteral)
+}
+
+func (n *Node) AsJinjaVariable() *JinjaVariable {
+	return n.data.(*JinjaVariable)
 }
 
 func (n *Node) AsNumericLiteral() *NumericLiteral {

@@ -261,6 +261,7 @@ func IsPropertyNameLiteral(node *Node) bool {
 	switch node.Kind {
 	case KindIdentifier,
 		KindStringLiteral,
+		KindJinjaVariable,
 		KindNoSubstitutionTemplateLiteral,
 		KindNumericLiteral:
 		return true
@@ -281,6 +282,7 @@ func IsPropertyName(node *Node) bool {
 	case KindIdentifier,
 		KindPrivateIdentifier,
 		KindStringLiteral,
+		KindJinjaVariable,
 		KindNumericLiteral,
 		KindComputedPropertyName:
 		return true
@@ -1913,7 +1915,7 @@ func getImportTypeNodeLiteral(node *Node) *Node {
 
 func IsExpressionNode(node *Node) bool {
 	switch node.Kind {
-	case KindSuperKeyword, KindNullKeyword, KindTrueKeyword, KindFalseKeyword, KindRegularExpressionLiteral,
+	case KindJinjaVariable, KindSuperKeyword, KindNullKeyword, KindTrueKeyword, KindFalseKeyword, KindRegularExpressionLiteral,
 		KindArrayLiteralExpression, KindObjectLiteralExpression, KindPropertyAccessExpression, KindElementAccessExpression,
 		KindCallExpression, KindNewExpression, KindTaggedTemplateExpression, KindAsExpression, KindTypeAssertionExpression,
 		KindSatisfiesExpression, KindNonNullExpression, KindParenthesizedExpression, KindFunctionExpression,

@@ -19,352 +19,708 @@ func _() {
 	_ = x[KindNumericLiteral-8]
 	_ = x[KindBigIntLiteral-9]
 	_ = x[KindStringLiteral-10]
-	_ = x[KindJsxText-11]
-	_ = x[KindJsxTextAllWhiteSpaces-12]
-	_ = x[KindRegularExpressionLiteral-13]
-	_ = x[KindNoSubstitutionTemplateLiteral-14]
-	_ = x[KindTemplateHead-15]
-	_ = x[KindTemplateMiddle-16]
-	_ = x[KindTemplateTail-17]
-	_ = x[KindOpenBraceToken-18]
-	_ = x[KindCloseBraceToken-19]
-	_ = x[KindOpenParenToken-20]
-	_ = x[KindCloseParenToken-21]
-	_ = x[KindOpenBracketToken-22]
-	_ = x[KindCloseBracketToken-23]
-	_ = x[KindDotToken-24]
-	_ = x[KindDotDotDotToken-25]
-	_ = x[KindSemicolonToken-26]
-	_ = x[KindCommaToken-27]
-	_ = x[KindQuestionDotToken-28]
-	_ = x[KindLessThanToken-29]
-	_ = x[KindLessThanSlashToken-30]
-	_ = x[KindGreaterThanToken-31]
-	_ = x[KindLessThanEqualsToken-32]
-	_ = x[KindGreaterThanEqualsToken-33]
-	_ = x[KindEqualsEqualsToken-34]
-	_ = x[KindExclamationEqualsToken-35]
-	_ = x[KindEqualsEqualsEqualsToken-36]
-	_ = x[KindExclamationEqualsEqualsToken-37]
-	_ = x[KindEqualsGreaterThanToken-38]
-	_ = x[KindPlusToken-39]
-	_ = x[KindMinusToken-40]
-	_ = x[KindAsteriskToken-41]
-	_ = x[KindAsteriskAsteriskToken-42]
-	_ = x[KindSlashToken-43]
-	_ = x[KindPercentToken-44]
-	_ = x[KindPlusPlusToken-45]
-	_ = x[KindMinusMinusToken-46]
-	_ = x[KindLessThanLessThanToken-47]
-	_ = x[KindGreaterThanGreaterThanToken-48]
-	_ = x[KindGreaterThanGreaterThanGreaterThanToken-49]
-	_ = x[KindAmpersandToken-50]
-	_ = x[KindBarToken-51]
-	_ = x[KindCaretToken-52]
-	_ = x[KindExclamationToken-53]
-	_ = x[KindTildeToken-54]
-	_ = x[KindAmpersandAmpersandToken-55]
-	_ = x[KindBarBarToken-56]
-	_ = x[KindQuestionToken-57]
-	_ = x[KindColonToken-58]
-	_ = x[KindAtToken-59]
-	_ = x[KindQuestionQuestionToken-60]
-	_ = x[KindBacktickToken-61]
-	_ = x[KindHashToken-62]
-	_ = x[KindEqualsToken-63]
-	_ = x[KindPlusEqualsToken-64]
-	_ = x[KindMinusEqualsToken-65]
-	_ = x[KindAsteriskEqualsToken-66]
-	_ = x[KindAsteriskAsteriskEqualsToken-67]
-	_ = x[KindSlashEqualsToken-68]
-	_ = x[KindPercentEqualsToken-69]
-	_ = x[KindLessThanLessThanEqualsToken-70]
-	_ = x[KindGreaterThanGreaterThanEqualsToken-71]
-	_ = x[KindGreaterThanGreaterThanGreaterThanEqualsToken-72]
-	_ = x[KindAmpersandEqualsToken-73]
-	_ = x[KindBarEqualsToken-74]
-	_ = x[KindBarBarEqualsToken-75]
-	_ = x[KindAmpersandAmpersandEqualsToken-76]
-	_ = x[KindQuestionQuestionEqualsToken-77]
-	_ = x[KindCaretEqualsToken-78]
-	_ = x[KindIdentifier-79]
-	_ = x[KindPrivateIdentifier-80]
-	_ = x[KindJSDocCommentTextToken-81]
-	_ = x[KindBreakKeyword-82]
-	_ = x[KindCaseKeyword-83]
-	_ = x[KindCatchKeyword-84]
-	_ = x[KindClassKeyword-85]
-	_ = x[KindConstKeyword-86]
-	_ = x[KindContinueKeyword-87]
-	_ = x[KindDebuggerKeyword-88]
-	_ = x[KindDefaultKeyword-89]
-	_ = x[KindDeleteKeyword-90]
-	_ = x[KindDoKeyword-91]
-	_ = x[KindElseKeyword-92]
-	_ = x[KindEnumKeyword-93]
-	_ = x[KindExportKeyword-94]
-	_ = x[KindExtendsKeyword-95]
-	_ = x[KindFalseKeyword-96]
-	_ = x[KindFinallyKeyword-97]
-	_ = x[KindForKeyword-98]
-	_ = x[KindFunctionKeyword-99]
-	_ = x[KindIfKeyword-100]
-	_ = x[KindImportKeyword-101]
-	_ = x[KindInKeyword-102]
-	_ = x[KindInstanceOfKeyword-103]
-	_ = x[KindNewKeyword-104]
-	_ = x[KindNullKeyword-105]
-	_ = x[KindReturnKeyword-106]
-	_ = x[KindSuperKeyword-107]
-	_ = x[KindSwitchKeyword-108]
-	_ = x[KindThisKeyword-109]
-	_ = x[KindThrowKeyword-110]
-	_ = x[KindTrueKeyword-111]
-	_ = x[KindTryKeyword-112]
-	_ = x[KindTypeOfKeyword-113]
-	_ = x[KindVarKeyword-114]
-	_ = x[KindVoidKeyword-115]
-	_ = x[KindWhileKeyword-116]
-	_ = x[KindWithKeyword-117]
-	_ = x[KindImplementsKeyword-118]
-	_ = x[KindInterfaceKeyword-119]
-	_ = x[KindLetKeyword-120]
-	_ = x[KindPackageKeyword-121]
-	_ = x[KindPrivateKeyword-122]
-	_ = x[KindProtectedKeyword-123]
-	_ = x[KindPublicKeyword-124]
-	_ = x[KindStaticKeyword-125]
-	_ = x[KindYieldKeyword-126]
-	_ = x[KindAbstractKeyword-127]
-	_ = x[KindAccessorKeyword-128]
-	_ = x[KindAsKeyword-129]
-	_ = x[KindAssertsKeyword-130]
-	_ = x[KindAssertKeyword-131]
-	_ = x[KindAnyKeyword-132]
-	_ = x[KindAsyncKeyword-133]
-	_ = x[KindAwaitKeyword-134]
-	_ = x[KindBooleanKeyword-135]
-	_ = x[KindConstructorKeyword-136]
-	_ = x[KindDeclareKeyword-137]
-	_ = x[KindGetKeyword-138]
-	_ = x[KindImmediateKeyword-139]
-	_ = x[KindInferKeyword-140]
-	_ = x[KindIntrinsicKeyword-141]
-	_ = x[KindIsKeyword-142]
-	_ = x[KindKeyOfKeyword-143]
-	_ = x[KindModuleKeyword-144]
-	_ = x[KindNamespaceKeyword-145]
-	_ = x[KindNeverKeyword-146]
-	_ = x[KindOutKeyword-147]
-	_ = x[KindReadonlyKeyword-148]
-	_ = x[KindRequireKeyword-149]
-	_ = x[KindNumberKeyword-150]
-	_ = x[KindObjectKeyword-151]
-	_ = x[KindSatisfiesKeyword-152]
-	_ = x[KindSetKeyword-153]
-	_ = x[KindStringKeyword-154]
-	_ = x[KindSymbolKeyword-155]
-	_ = x[KindTypeKeyword-156]
-	_ = x[KindUndefinedKeyword-157]
-	_ = x[KindUniqueKeyword-158]
-	_ = x[KindUnknownKeyword-159]
-	_ = x[KindUsingKeyword-160]
-	_ = x[KindFromKeyword-161]
-	_ = x[KindGlobalKeyword-162]
-	_ = x[KindBigIntKeyword-163]
-	_ = x[KindOverrideKeyword-164]
-	_ = x[KindOfKeyword-165]
-	_ = x[KindDeferKeyword-166]
-	_ = x[KindQualifiedName-167]
-	_ = x[KindComputedPropertyName-168]
-	_ = x[KindTypeParameter-169]
-	_ = x[KindParameter-170]
-	_ = x[KindDecorator-171]
-	_ = x[KindPropertySignature-172]
-	_ = x[KindPropertyDeclaration-173]
-	_ = x[KindMethodSignature-174]
-	_ = x[KindMethodDeclaration-175]
-	_ = x[KindClassStaticBlockDeclaration-176]
-	_ = x[KindConstructor-177]
-	_ = x[KindGetAccessor-178]
-	_ = x[KindSetAccessor-179]
-	_ = x[KindCallSignature-180]
-	_ = x[KindConstructSignature-181]
-	_ = x[KindIndexSignature-182]
-	_ = x[KindTypePredicate-183]
-	_ = x[KindTypeReference-184]
-	_ = x[KindFunctionType-185]
-	_ = x[KindConstructorType-186]
-	_ = x[KindTypeQuery-187]
-	_ = x[KindTypeLiteral-188]
-	_ = x[KindArrayType-189]
-	_ = x[KindTupleType-190]
-	_ = x[KindOptionalType-191]
-	_ = x[KindRestType-192]
-	_ = x[KindUnionType-193]
-	_ = x[KindIntersectionType-194]
-	_ = x[KindConditionalType-195]
-	_ = x[KindInferType-196]
-	_ = x[KindParenthesizedType-197]
-	_ = x[KindThisType-198]
-	_ = x[KindTypeOperator-199]
-	_ = x[KindIndexedAccessType-200]
-	_ = x[KindMappedType-201]
-	_ = x[KindLiteralType-202]
-	_ = x[KindNamedTupleMember-203]
-	_ = x[KindTemplateLiteralType-204]
-	_ = x[KindTemplateLiteralTypeSpan-205]
-	_ = x[KindImportType-206]
-	_ = x[KindObjectBindingPattern-207]
-	_ = x[KindArrayBindingPattern-208]
-	_ = x[KindBindingElement-209]
-	_ = x[KindArrayLiteralExpression-210]
-	_ = x[KindObjectLiteralExpression-211]
-	_ = x[KindPropertyAccessExpression-212]
-	_ = x[KindElementAccessExpression-213]
-	_ = x[KindCallExpression-214]
-	_ = x[KindNewExpression-215]
-	_ = x[KindTaggedTemplateExpression-216]
-	_ = x[KindTypeAssertionExpression-217]
-	_ = x[KindParenthesizedExpression-218]
-	_ = x[KindFunctionExpression-219]
-	_ = x[KindArrowFunction-220]
-	_ = x[KindDeleteExpression-221]
-	_ = x[KindTypeOfExpression-222]
-	_ = x[KindVoidExpression-223]
-	_ = x[KindAwaitExpression-224]
-	_ = x[KindPrefixUnaryExpression-225]
-	_ = x[KindPostfixUnaryExpression-226]
-	_ = x[KindBinaryExpression-227]
-	_ = x[KindConditionalExpression-228]
-	_ = x[KindTemplateExpression-229]
-	_ = x[KindYieldExpression-230]
-	_ = x[KindSpreadElement-231]
-	_ = x[KindClassExpression-232]
-	_ = x[KindOmittedExpression-233]
-	_ = x[KindExpressionWithTypeArguments-234]
-	_ = x[KindAsExpression-235]
-	_ = x[KindNonNullExpression-236]
-	_ = x[KindMetaProperty-237]
-	_ = x[KindSyntheticExpression-238]
-	_ = x[KindSatisfiesExpression-239]
-	_ = x[KindTemplateSpan-240]
-	_ = x[KindSemicolonClassElement-241]
-	_ = x[KindBlock-242]
-	_ = x[KindEmptyStatement-243]
-	_ = x[KindVariableStatement-244]
-	_ = x[KindExpressionStatement-245]
-	_ = x[KindIfStatement-246]
-	_ = x[KindDoStatement-247]
-	_ = x[KindWhileStatement-248]
-	_ = x[KindForStatement-249]
-	_ = x[KindForInStatement-250]
-	_ = x[KindForOfStatement-251]
-	_ = x[KindContinueStatement-252]
-	_ = x[KindBreakStatement-253]
-	_ = x[KindReturnStatement-254]
-	_ = x[KindWithStatement-255]
-	_ = x[KindSwitchStatement-256]
-	_ = x[KindLabeledStatement-257]
-	_ = x[KindThrowStatement-258]
-	_ = x[KindTryStatement-259]
-	_ = x[KindDebuggerStatement-260]
-	_ = x[KindVariableDeclaration-261]
-	_ = x[KindVariableDeclarationList-262]
-	_ = x[KindFunctionDeclaration-263]
-	_ = x[KindClassDeclaration-264]
-	_ = x[KindInterfaceDeclaration-265]
-	_ = x[KindTypeAliasDeclaration-266]
-	_ = x[KindEnumDeclaration-267]
-	_ = x[KindModuleDeclaration-268]
-	_ = x[KindModuleBlock-269]
-	_ = x[KindCaseBlock-270]
-	_ = x[KindNamespaceExportDeclaration-271]
-	_ = x[KindImportEqualsDeclaration-272]
-	_ = x[KindImportDeclaration-273]
-	_ = x[KindImportClause-274]
-	_ = x[KindNamespaceImport-275]
-	_ = x[KindNamedImports-276]
-	_ = x[KindImportSpecifier-277]
-	_ = x[KindExportAssignment-278]
-	_ = x[KindExportDeclaration-279]
-	_ = x[KindNamedExports-280]
-	_ = x[KindNamespaceExport-281]
-	_ = x[KindExportSpecifier-282]
-	_ = x[KindMissingDeclaration-283]
-	_ = x[KindExternalModuleReference-284]
-	_ = x[KindJsxElement-285]
-	_ = x[KindJsxSelfClosingElement-286]
-	_ = x[KindJsxOpeningElement-287]
-	_ = x[KindJsxClosingElement-288]
-	_ = x[KindJsxFragment-289]
-	_ = x[KindJsxOpeningFragment-290]
-	_ = x[KindJsxClosingFragment-291]
-	_ = x[KindJsxAttribute-292]
-	_ = x[KindJsxAttributes-293]
-	_ = x[KindJsxSpreadAttribute-294]
-	_ = x[KindJsxExpression-295]
-	_ = x[KindJsxNamespacedName-296]
-	_ = x[KindCaseClause-297]
-	_ = x[KindDefaultClause-298]
-	_ = x[KindHeritageClause-299]
-	_ = x[KindCatchClause-300]
-	_ = x[KindImportAttributes-301]
-	_ = x[KindImportAttribute-302]
-	_ = x[KindPropertyAssignment-303]
-	_ = x[KindShorthandPropertyAssignment-304]
-	_ = x[KindSpreadAssignment-305]
-	_ = x[KindEnumMember-306]
-	_ = x[KindSourceFile-307]
-	_ = x[KindJSDocTypeExpression-308]
-	_ = x[KindJSDocNameReference-309]
-	_ = x[KindJSDocAllType-310]
-	_ = x[KindJSDocNullableType-311]
-	_ = x[KindJSDocNonNullableType-312]
-	_ = x[KindJSDocOptionalType-313]
-	_ = x[KindJSDocVariadicType-314]
-	_ = x[KindJSDoc-315]
-	_ = x[KindJSDocText-316]
-	_ = x[KindJSDocTypeLiteral-317]
-	_ = x[KindJSDocSignature-318]
-	_ = x[KindJSDocLink-319]
-	_ = x[KindJSDocLinkCode-320]
-	_ = x[KindJSDocLinkPlain-321]
-	_ = x[KindJSDocUnknownTag-322]
-	_ = x[KindJSDocAugmentsTag-323]
-	_ = x[KindJSDocImplementsTag-324]
-	_ = x[KindJSDocDeprecatedTag-325]
-	_ = x[KindJSDocPublicTag-326]
-	_ = x[KindJSDocPrivateTag-327]
-	_ = x[KindJSDocProtectedTag-328]
-	_ = x[KindJSDocReadonlyTag-329]
-	_ = x[KindJSDocOverrideTag-330]
-	_ = x[KindJSDocCallbackTag-331]
-	_ = x[KindJSDocOverloadTag-332]
-	_ = x[KindJSDocParameterTag-333]
-	_ = x[KindJSDocReturnTag-334]
-	_ = x[KindJSDocThisTag-335]
-	_ = x[KindJSDocTypeTag-336]
-	_ = x[KindJSDocTemplateTag-337]
-	_ = x[KindJSDocTypedefTag-338]
-	_ = x[KindJSDocSeeTag-339]
-	_ = x[KindJSDocPropertyTag-340]
-	_ = x[KindJSDocThrowsTag-341]
-	_ = x[KindJSDocSatisfiesTag-342]
-	_ = x[KindJSDocImportTag-343]
-	_ = x[KindSyntaxList-344]
-	_ = x[KindJSTypeAliasDeclaration-345]
-	_ = x[KindJSImportDeclaration-346]
-	_ = x[KindNotEmittedStatement-347]
-	_ = x[KindPartiallyEmittedExpression-348]
-	_ = x[KindSyntheticReferenceExpression-349]
-	_ = x[KindNotEmittedTypeElement-350]
-	_ = x[KindCount-351]
+	_ = x[KindJinjaVariable-11]
+	_ = x[KindJsxText-12]
+	_ = x[KindJsxTextAllWhiteSpaces-13]
+	_ = x[KindRegularExpressionLiteral-14]
+	_ = x[KindNoSubstitutionTemplateLiteral-15]
+	_ = x[KindTemplateHead-16]
+	_ = x[KindTemplateMiddle-17]
+	_ = x[KindTemplateTail-18]
+	_ = x[KindOpenBraceToken-19]
+	_ = x[KindCloseBraceToken-20]
+	_ = x[KindOpenParenToken-21]
+	_ = x[KindCloseParenToken-22]
+	_ = x[KindOpenBracketToken-23]
+	_ = x[KindCloseBracketToken-24]
+	_ = x[KindDotToken-25]
+	_ = x[KindDotDotDotToken-26]
+	_ = x[KindSemicolonToken-27]
+	_ = x[KindCommaToken-28]
+	_ = x[KindQuestionDotToken-29]
+	_ = x[KindLessThanToken-30]
+	_ = x[KindLessThanSlashToken-31]
+	_ = x[KindGreaterThanToken-32]
+	_ = x[KindLessThanEqualsToken-33]
+	_ = x[KindGreaterThanEqualsToken-34]
+	_ = x[KindEqualsEqualsToken-35]
+	_ = x[KindExclamationEqualsToken-36]
+	_ = x[KindEqualsEqualsEqualsToken-37]
+	_ = x[KindExclamationEqualsEqualsToken-38]
+	_ = x[KindEqualsGreaterThanToken-39]
+	_ = x[KindPlusToken-40]
+	_ = x[KindMinusToken-41]
+	_ = x[KindAsteriskToken-42]
+	_ = x[KindAsteriskAsteriskToken-43]
+	_ = x[KindSlashToken-44]
+	_ = x[KindPercentToken-45]
+	_ = x[KindPlusPlusToken-46]
+	_ = x[KindMinusMinusToken-47]
+	_ = x[KindLessThanLessThanToken-48]
+	_ = x[KindGreaterThanGreaterThanToken-49]
+	_ = x[KindGreaterThanGreaterThanGreaterThanToken-50]
+	_ = x[KindAmpersandToken-51]
+	_ = x[KindBarToken-52]
+	_ = x[KindCaretToken-53]
+	_ = x[KindExclamationToken-54]
+	_ = x[KindTildeToken-55]
+	_ = x[KindAmpersandAmpersandToken-56]
+	_ = x[KindBarBarToken-57]
+	_ = x[KindQuestionToken-58]
+	_ = x[KindColonToken-59]
+	_ = x[KindAtToken-60]
+	_ = x[KindQuestionQuestionToken-61]
+	_ = x[KindBacktickToken-62]
+	_ = x[KindHashToken-63]
+	_ = x[KindEqualsToken-64]
+	_ = x[KindPlusEqualsToken-65]
+	_ = x[KindMinusEqualsToken-66]
+	_ = x[KindAsteriskEqualsToken-67]
+	_ = x[KindAsteriskAsteriskEqualsToken-68]
+	_ = x[KindSlashEqualsToken-69]
+	_ = x[KindPercentEqualsToken-70]
+	_ = x[KindLessThanLessThanEqualsToken-71]
+	_ = x[KindGreaterThanGreaterThanEqualsToken-72]
+	_ = x[KindGreaterThanGreaterThanGreaterThanEqualsToken-73]
+	_ = x[KindAmpersandEqualsToken-74]
+	_ = x[KindBarEqualsToken-75]
+	_ = x[KindBarBarEqualsToken-76]
+	_ = x[KindAmpersandAmpersandEqualsToken-77]
+	_ = x[KindQuestionQuestionEqualsToken-78]
+	_ = x[KindCaretEqualsToken-79]
+	_ = x[KindIdentifier-80]
+	_ = x[KindPrivateIdentifier-81]
+	_ = x[KindJSDocCommentTextToken-82]
+	_ = x[KindBreakKeyword-83]
+	_ = x[KindCaseKeyword-84]
+	_ = x[KindCatchKeyword-85]
+	_ = x[KindClassKeyword-86]
+	_ = x[KindConstKeyword-87]
+	_ = x[KindContinueKeyword-88]
+	_ = x[KindDebuggerKeyword-89]
+	_ = x[KindDefaultKeyword-90]
+	_ = x[KindDeleteKeyword-91]
+	_ = x[KindDoKeyword-92]
+	_ = x[KindElseKeyword-93]
+	_ = x[KindEnumKeyword-94]
+	_ = x[KindExportKeyword-95]
+	_ = x[KindExtendsKeyword-96]
+	_ = x[KindFalseKeyword-97]
+	_ = x[KindFinallyKeyword-98]
+	_ = x[KindForKeyword-99]
+	_ = x[KindFunctionKeyword-100]
+	_ = x[KindIfKeyword-101]
+	_ = x[KindImportKeyword-102]
+	_ = x[KindInKeyword-103]
+	_ = x[KindInstanceOfKeyword-104]
+	_ = x[KindNewKeyword-105]
+	_ = x[KindNullKeyword-106]
+	_ = x[KindReturnKeyword-107]
+	_ = x[KindSuperKeyword-108]
+	_ = x[KindSwitchKeyword-109]
+	_ = x[KindThisKeyword-110]
+	_ = x[KindThrowKeyword-111]
+	_ = x[KindTrueKeyword-112]
+	_ = x[KindTryKeyword-113]
+	_ = x[KindTypeOfKeyword-114]
+	_ = x[KindVarKeyword-115]
+	_ = x[KindVoidKeyword-116]
+	_ = x[KindWhileKeyword-117]
+	_ = x[KindWithKeyword-118]
+	_ = x[KindImplementsKeyword-119]
+	_ = x[KindInterfaceKeyword-120]
+	_ = x[KindLetKeyword-121]
+	_ = x[KindPackageKeyword-122]
+	_ = x[KindPrivateKeyword-123]
+	_ = x[KindProtectedKeyword-124]
+	_ = x[KindPublicKeyword-125]
+	_ = x[KindStaticKeyword-126]
+	_ = x[KindYieldKeyword-127]
+	_ = x[KindAbstractKeyword-128]
+	_ = x[KindAccessorKeyword-129]
+	_ = x[KindAsKeyword-130]
+	_ = x[KindAssertsKeyword-131]
+	_ = x[KindAssertKeyword-132]
+	_ = x[KindAnyKeyword-133]
+	_ = x[KindAsyncKeyword-134]
+	_ = x[KindAwaitKeyword-135]
+	_ = x[KindBooleanKeyword-136]
+	_ = x[KindConstructorKeyword-137]
+	_ = x[KindDeclareKeyword-138]
+	_ = x[KindGetKeyword-139]
+	_ = x[KindImmediateKeyword-140]
+	_ = x[KindInferKeyword-141]
+	_ = x[KindIntrinsicKeyword-142]
+	_ = x[KindIsKeyword-143]
+	_ = x[KindKeyOfKeyword-144]
+	_ = x[KindModuleKeyword-145]
+	_ = x[KindNamespaceKeyword-146]
+	_ = x[KindNeverKeyword-147]
+	_ = x[KindOutKeyword-148]
+	_ = x[KindReadonlyKeyword-149]
+	_ = x[KindRequireKeyword-150]
+	_ = x[KindNumberKeyword-151]
+	_ = x[KindObjectKeyword-152]
+	_ = x[KindSatisfiesKeyword-153]
+	_ = x[KindSetKeyword-154]
+	_ = x[KindStringKeyword-155]
+	_ = x[KindSymbolKeyword-156]
+	_ = x[KindTypeKeyword-157]
+	_ = x[KindUndefinedKeyword-158]
+	_ = x[KindUniqueKeyword-159]
+	_ = x[KindUnknownKeyword-160]
+	_ = x[KindUsingKeyword-161]
+	_ = x[KindFromKeyword-162]
+	_ = x[KindGlobalKeyword-163]
+	_ = x[KindBigIntKeyword-164]
+	_ = x[KindOverrideKeyword-165]
+	_ = x[KindOfKeyword-166]
+	_ = x[KindDeferKeyword-167]
+	_ = x[KindQualifiedName-168]
+	_ = x[KindComputedPropertyName-169]
+	_ = x[KindTypeParameter-170]
+	_ = x[KindParameter-171]
+	_ = x[KindDecorator-172]
+	_ = x[KindPropertySignature-173]
+	_ = x[KindPropertyDeclaration-174]
+	_ = x[KindMethodSignature-175]
+	_ = x[KindMethodDeclaration-176]
+	_ = x[KindClassStaticBlockDeclaration-177]
+	_ = x[KindConstructor-178]
+	_ = x[KindGetAccessor-179]
+	_ = x[KindSetAccessor-180]
+	_ = x[KindCallSignature-181]
+	_ = x[KindConstructSignature-182]
+	_ = x[KindIndexSignature-183]
+	_ = x[KindTypePredicate-184]
+	_ = x[KindTypeReference-185]
+	_ = x[KindFunctionType-186]
+	_ = x[KindConstructorType-187]
+	_ = x[KindTypeQuery-188]
+	_ = x[KindTypeLiteral-189]
+	_ = x[KindArrayType-190]
+	_ = x[KindTupleType-191]
+	_ = x[KindOptionalType-192]
+	_ = x[KindRestType-193]
+	_ = x[KindUnionType-194]
+	_ = x[KindIntersectionType-195]
+	_ = x[KindConditionalType-196]
+	_ = x[KindInferType-197]
+	_ = x[KindParenthesizedType-198]
+	_ = x[KindThisType-199]
+	_ = x[KindTypeOperator-200]
+	_ = x[KindIndexedAccessType-201]
+	_ = x[KindMappedType-202]
+	_ = x[KindLiteralType-203]
+	_ = x[KindNamedTupleMember-204]
+	_ = x[KindTemplateLiteralType-205]
+	_ = x[KindTemplateLiteralTypeSpan-206]
+	_ = x[KindImportType-207]
+	_ = x[KindObjectBindingPattern-208]
+	_ = x[KindArrayBindingPattern-209]
+	_ = x[KindBindingElement-210]
+	_ = x[KindArrayLiteralExpression-211]
+	_ = x[KindObjectLiteralExpression-212]
+	_ = x[KindPropertyAccessExpression-213]
+	_ = x[KindElementAccessExpression-214]
+	_ = x[KindCallExpression-215]
+	_ = x[KindNewExpression-216]
+	_ = x[KindTaggedTemplateExpression-217]
+	_ = x[KindTypeAssertionExpression-218]
+	_ = x[KindParenthesizedExpression-219]
+	_ = x[KindFunctionExpression-220]
+	_ = x[KindArrowFunction-221]
+	_ = x[KindDeleteExpression-222]
+	_ = x[KindTypeOfExpression-223]
+	_ = x[KindVoidExpression-224]
+	_ = x[KindAwaitExpression-225]
+	_ = x[KindPrefixUnaryExpression-226]
+	_ = x[KindPostfixUnaryExpression-227]
+	_ = x[KindBinaryExpression-228]
+	_ = x[KindConditionalExpression-229]
+	_ = x[KindTemplateExpression-230]
+	_ = x[KindYieldExpression-231]
+	_ = x[KindSpreadElement-232]
+	_ = x[KindClassExpression-233]
+	_ = x[KindOmittedExpression-234]
+	_ = x[KindExpressionWithTypeArguments-235]
+	_ = x[KindAsExpression-236]
+	_ = x[KindNonNullExpression-237]
+	_ = x[KindMetaProperty-238]
+	_ = x[KindSyntheticExpression-239]
+	_ = x[KindSatisfiesExpression-240]
+	_ = x[KindTemplateSpan-241]
+	_ = x[KindSemicolonClassElement-242]
+	_ = x[KindBlock-243]
+	_ = x[KindEmptyStatement-244]
+	_ = x[KindVariableStatement-245]
+	_ = x[KindExpressionStatement-246]
+	_ = x[KindIfStatement-247]
+	_ = x[KindDoStatement-248]
+	_ = x[KindWhileStatement-249]
+	_ = x[KindForStatement-250]
+	_ = x[KindForInStatement-251]
+	_ = x[KindForOfStatement-252]
+	_ = x[KindContinueStatement-253]
+	_ = x[KindBreakStatement-254]
+	_ = x[KindReturnStatement-255]
+	_ = x[KindWithStatement-256]
+	_ = x[KindSwitchStatement-257]
+	_ = x[KindLabeledStatement-258]
+	_ = x[KindThrowStatement-259]
+	_ = x[KindTryStatement-260]
+	_ = x[KindDebuggerStatement-261]
+	_ = x[KindVariableDeclaration-262]
+	_ = x[KindVariableDeclarationList-263]
+	_ = x[KindFunctionDeclaration-264]
+	_ = x[KindClassDeclaration-265]
+	_ = x[KindInterfaceDeclaration-266]
+	_ = x[KindTypeAliasDeclaration-267]
+	_ = x[KindEnumDeclaration-268]
+	_ = x[KindModuleDeclaration-269]
+	_ = x[KindModuleBlock-270]
+	_ = x[KindCaseBlock-271]
+	_ = x[KindNamespaceExportDeclaration-272]
+	_ = x[KindImportEqualsDeclaration-273]
+	_ = x[KindImportDeclaration-274]
+	_ = x[KindImportClause-275]
+	_ = x[KindNamespaceImport-276]
+	_ = x[KindNamedImports-277]
+	_ = x[KindImportSpecifier-278]
+	_ = x[KindExportAssignment-279]
+	_ = x[KindExportDeclaration-280]
+	_ = x[KindNamedExports-281]
+	_ = x[KindNamespaceExport-282]
+	_ = x[KindExportSpecifier-283]
+	_ = x[KindMissingDeclaration-284]
+	_ = x[KindExternalModuleReference-285]
+	_ = x[KindJsxElement-286]
+	_ = x[KindJsxSelfClosingElement-287]
+	_ = x[KindJsxOpeningElement-288]
+	_ = x[KindJsxClosingElement-289]
+	_ = x[KindJsxFragment-290]
+	_ = x[KindJsxOpeningFragment-291]
+	_ = x[KindJsxClosingFragment-292]
+	_ = x[KindJsxAttribute-293]
+	_ = x[KindJsxAttributes-294]
+	_ = x[KindJsxSpreadAttribute-295]
+	_ = x[KindJsxExpression-296]
+	_ = x[KindJsxNamespacedName-297]
+	_ = x[KindCaseClause-298]
+	_ = x[KindDefaultClause-299]
+	_ = x[KindHeritageClause-300]
+	_ = x[KindCatchClause-301]
+	_ = x[KindImportAttributes-302]
+	_ = x[KindImportAttribute-303]
+	_ = x[KindPropertyAssignment-304]
+	_ = x[KindShorthandPropertyAssignment-305]
+	_ = x[KindSpreadAssignment-306]
+	_ = x[KindEnumMember-307]
+	_ = x[KindSourceFile-308]
+	_ = x[KindJSDocTypeExpression-309]
+	_ = x[KindJSDocNameReference-310]
+	_ = x[KindJSDocAllType-311]
+	_ = x[KindJSDocNullableType-312]
+	_ = x[KindJSDocNonNullableType-313]
+	_ = x[KindJSDocOptionalType-314]
+	_ = x[KindJSDocVariadicType-315]
+	_ = x[KindJSDoc-316]
+	_ = x[KindJSDocText-317]
+	_ = x[KindJSDocTypeLiteral-318]
+	_ = x[KindJSDocSignature-319]
+	_ = x[KindJSDocLink-320]
+	_ = x[KindJSDocLinkCode-321]
+	_ = x[KindJSDocLinkPlain-322]
+	_ = x[KindJSDocUnknownTag-323]
+	_ = x[KindJSDocAugmentsTag-324]
+	_ = x[KindJSDocImplementsTag-325]
+	_ = x[KindJSDocDeprecatedTag-326]
+	_ = x[KindJSDocPublicTag-327]
+	_ = x[KindJSDocPrivateTag-328]
+	_ = x[KindJSDocProtectedTag-329]
+	_ = x[KindJSDocReadonlyTag-330]
+	_ = x[KindJSDocOverrideTag-331]
+	_ = x[KindJSDocCallbackTag-332]
+	_ = x[KindJSDocOverloadTag-333]
+	_ = x[KindJSDocParameterTag-334]
+	_ = x[KindJSDocReturnTag-335]
+	_ = x[KindJSDocThisTag-336]
+	_ = x[KindJSDocTypeTag-337]
+	_ = x[KindJSDocTemplateTag-338]
+	_ = x[KindJSDocTypedefTag-339]
+	_ = x[KindJSDocSeeTag-340]
+	_ = x[KindJSDocPropertyTag-341]
+	_ = x[KindJSDocThrowsTag-342]
+	_ = x[KindJSDocSatisfiesTag-343]
+	_ = x[KindJSDocImportTag-344]
+	_ = x[KindSyntaxList-345]
+	_ = x[KindJSTypeAliasDeclaration-346]
+	_ = x[KindJSImportDeclaration-347]
+	_ = x[KindNotEmittedStatement-348]
+	_ = x[KindPartiallyEmittedExpression-349]
+	_ = x[KindSyntheticReferenceExpression-350]
+	_ = x[KindNotEmittedTypeElement-351]
+	_ = x[KindCount-352]
 }
 
-const _Kind_name = "KindUnknownKindEndOfFileKindSingleLineCommentTriviaKindMultiLineCommentTriviaKindNewLineTriviaKindWhitespaceTriviaKindConflictMarkerTriviaKindNonTextFileMarkerTriviaKindNumericLiteralKindBigIntLiteralKindStringLiteralKindJsxTextKindJsxTextAllWhiteSpacesKindRegularExpressionLiteralKindNoSubstitutionTemplateLiteralKindTemplateHeadKindTemplateMiddleKindTemplateTailKindOpenBraceTokenKindCloseBraceTokenKindOpenParenTokenKindCloseParenTokenKindOpenBracketTokenKindCloseBracketTokenKindDotTokenKindDotDotDotTokenKindSemicolonTokenKindCommaTokenKindQuestionDotTokenKindLessThanTokenKindLessThanSlashTokenKindGreaterThanTokenKindLessThanEqualsTokenKindGreaterThanEqualsTokenKindEqualsEqualsTokenKindExclamationEqualsTokenKindEqualsEqualsEqualsTokenKindExclamationEqualsEqualsTokenKindEqualsGreaterThanTokenKindPlusTokenKindMinusTokenKindAsteriskTokenKindAsteriskAsteriskTokenKindSlashTokenKindPercentTokenKindPlusPlusTokenKindMinusMinusTokenKindLessThanLessThanTokenKindGreaterThanGreaterThanTokenKindGreaterThanGreaterThanGreaterThanTokenKindAmpersandTokenKindBarTokenKindCaretTokenKindExclamationTokenKindTildeTokenKindAmpersandAmpersandTokenKindBarBarTokenKindQuestionTokenKindColonTokenKindAtTokenKindQuestionQuestionTokenKindBacktickTokenKindHashTokenKindEqualsTokenKindPlusEqualsTokenKindMinusEqualsTokenKindAsteriskEqualsTokenKindAsteriskAsteriskEqualsTokenKindSlashEqualsTokenKindPercentEqualsTokenKindLessThanLessThanEqualsTokenKindGreaterThanGreaterThanEqualsTokenKindGreaterThanGreaterThanGreaterThanEqualsTokenKindAmpersandEqualsTokenKindBarEqualsTokenKindBarBarEqualsTokenKindAmpersandAmpersandEqualsTokenKindQuestionQuestionEqualsTokenKindCaretEqualsTokenKindIdentifierKindPrivateIdentifierKindJSDocCommentTextTokenKindBreakKeywordKindCaseKeywordKindCatchKeywordKindClassKeywordKindConstKeywordKindContinueKeywordKindDebuggerKeywordKindDefaultKeywordKindDeleteKeywordKindDoKeywordKindElseKeywordKindEnumKeywordKindExportKeywordKindExtendsKeywordKindFalseKeywordKindFinallyKeywordKindForKeywordKindFunctionKeywordKindIfKeywordKindImportKeywordKindInKeywordKindInstanceOfKeywordKindNewKeywordKindNullKeywordKindReturnKeywordKindSuperKeywordKindSwitchKeywordKindThisKeywordKindThrowKeywordKindTrueKeywordKindTryKeywordKindTypeOfKeywordKindVarKeywordKindVoidKeywordKindWhileKeywordKindWithKeywordKindImplementsKeywordKindInterfaceKeywordKindLetKeywordKindPackageKeywordKindPrivateKeywordKindProtectedKeywordKindPublicKeywordKindStaticKeywordKindYieldKeywordKindAbstractKeywordKindAccessorKeywordKindAsKeywordKindAssertsKeywordKindAssertKeywordKindAnyKeywordKindAsyncKeywordKindAwaitKeywordKindBooleanKeywordKindConstructorKeywordKindDeclareKeywordKindGetKeywordKindImmediateKeywordKindInferKeywordKindIntrinsicKeywordKindIsKeywordKindKeyOfKeywordKindModuleKeywordKindNamespaceKeywordKindNeverKeywordKindOutKeywordKindReadonlyKeywordKindRequireKeywordKindNumberKeywordKindObjectKeywordKindSatisfiesKeywordKindSetKeywordKindStringKeywordKindSymbolKeywordKindTypeKeywordKindUndefinedKeywordKindUniqueKeywordKindUnknownKeywordKindUsingKeywordKindFromKeywordKindGlobalKeywordKindBigIntKeywordKindOverrideKeywordKindOfKeywordKindDeferKeywordKindQualifiedNameKindComputedPropertyNameKindTypeParameterKindParameterKindDecoratorKindPropertySignatureKindPropertyDeclarationKindMethodSignatureKindMethodDeclarationKindClassStaticBlockDeclarationKindConstructorKindGetAccessorKindSetAccessorKindCallSignatureKindConstructSignatureKindIndexSignatureKindTypePredicateKindTypeReferenceKindFunctionTypeKindConstructorTypeKindTypeQueryKindTypeLiteralKindArrayTypeKindTupleTypeKindOptionalTypeKindRestTypeKindUnionTypeKindIntersectionTypeKindConditionalTypeKindInferTypeKindParenthesizedTypeKindThisTypeKindTypeOperatorKindIndexedAccessTypeKindMappedTypeKindLiteralTypeKindNamedTupleMemberKindTemplateLiteralTypeKindTemplateLiteralTypeSpanKindImportTypeKindObjectBindingPatternKindArrayBindingPatternKindBindingElementKindArrayLiteralExpressionKindObjectLiteralExpressionKindPropertyAccessExpressionKindElementAccessExpressionKindCallExpressionKindNewExpressionKindTaggedTemplateExpressionKindTypeAssertionExpressionKindParenthesizedExpressionKindFunctionExpressionKindArrowFunctionKindDeleteExpressionKindTypeOfExpressionKindVoidExpressionKindAwaitExpressionKindPrefixUnaryExpressionKindPostfixUnaryExpressionKindBinaryExpressionKindConditionalExpressionKindTemplateExpressionKindYieldExpressionKindSpreadElementKindClassExpressionKindOmittedExpressionKindExpressionWithTypeArgumentsKindAsExpressionKindNonNullExpressionKindMetaPropertyKindSyntheticExpressionKindSatisfiesExpressionKindTemplateSpanKindSemicolonClassElementKindBlockKindEmptyStatementKindVariableStatementKindExpressionStatementKindIfStatementKindDoStatementKindWhileStatementKindForStatementKindForInStatementKindForOfStatementKindContinueStatementKindBreakStatementKindReturnStatementKindWithStatementKindSwitchStatementKindLabeledStatementKindThrowStatementKindTryStatementKindDebuggerStatementKindVariableDeclarationKindVariableDeclarationListKindFunctionDeclarationKindClassDeclarationKindInterfaceDeclarationKindTypeAliasDeclarationKindEnumDeclarationKindModuleDeclarationKindModuleBlockKindCaseBlockKindNamespaceExportDeclarationKindImportEqualsDeclarationKindImportDeclarationKindImportClauseKindNamespaceImportKindNamedImportsKindImportSpecifierKindExportAssignmentKindExportDeclarationKindNamedExportsKindNamespaceExportKindExportSpecifierKindMissingDeclarationKindExternalModuleReferenceKindJsxElementKindJsxSelfClosingElementKindJsxOpeningElementKindJsxClosingElementKindJsxFragmentKindJsxOpeningFragmentKindJsxClosingFragmentKindJsxAttributeKindJsxAttributesKindJsxSpreadAttributeKindJsxExpressionKindJsxNamespacedNameKindCaseClauseKindDefaultClauseKindHeritageClauseKindCatchClauseKindImportAttributesKindImportAttributeKindPropertyAssignmentKindShorthandPropertyAssignmentKindSpreadAssignmentKindEnumMemberKindSourceFileKindJSDocTypeExpressionKindJSDocNameReferenceKindJSDocAllTypeKindJSDocNullableTypeKindJSDocNonNullableTypeKindJSDocOptionalTypeKindJSDocVariadicTypeKindJSDocKindJSDocTextKindJSDocTypeLiteralKindJSDocSignatureKindJSDocLinkKindJSDocLinkCodeKindJSDocLinkPlainKindJSDocUnknownTagKindJSDocAugmentsTagKindJSDocImplementsTagKindJSDocDeprecatedTagKindJSDocPublicTagKindJSDocPrivateTagKindJSDocProtectedTagKindJSDocReadonlyTagKindJSDocOverrideTagKindJSDocCallbackTagKindJSDocOverloadTagKindJSDocParameterTagKindJSDocReturnTagKindJSDocThisTagKindJSDocTypeTagKindJSDocTemplateTagKindJSDocTypedefTagKindJSDocSeeTagKindJSDocPropertyTagKindJSDocThrowsTagKindJSDocSatisfiesTagKindJSDocImportTagKindSyntaxListKindJSTypeAliasDeclarationKindJSImportDeclarationKindNotEmittedStatementKindPartiallyEmittedExpressionKindSyntheticReferenceExpressionKindNotEmittedTypeElementKindCount"
+const _Kind_name = "KindUnknownKindEndOfFileKindSingleLineCommentTriviaKindMultiLineCommentTriviaKindNewLineTriviaKindWhitespaceTriviaKindConflictMarkerTriviaKindNonTextFileMarkerTriviaKindNumericLiteralKindBigIntLiteralKindStringLiteralJinjaVariableKindJsxTextKindJsxTextAllWhiteSpacesKindRegularExpressionLiteralKindNoSubstitutionTemplateLiteralKindTemplateHeadKindTemplateMiddleKindTemplateTailKindOpenBraceTokenKindCloseBraceTokenKindOpenParenTokenKindCloseParenTokenKindOpenBracketTokenKindCloseBracketTokenKindDotTokenKindDotDotDotTokenKindSemicolonTokenKindCommaTokenKindQuestionDotTokenKindLessThanTokenKindLessThanSlashTokenKindGreaterThanTokenKindLessThanEqualsTokenKindGreaterThanEqualsTokenKindEqualsEqualsTokenKindExclamationEqualsTokenKindEqualsEqualsEqualsTokenKindExclamationEqualsEqualsTokenKindEqualsGreaterThanTokenKindPlusTokenKindMinusTokenKindAsteriskTokenKindAsteriskAsteriskTokenKindSlashTokenKindPercentTokenKindPlusPlusTokenKindMinusMinusTokenKindLessThanLessThanTokenKindGreaterThanGreaterThanTokenKindGreaterThanGreaterThanGreaterThanTokenKindAmpersandTokenKindBarTokenKindCaretTokenKindExclamationTokenKindTildeTokenKindAmpersandAmpersandTokenKindBarBarTokenKindQuestionTokenKindColonTokenKindAtTokenKindQuestionQuestionTokenKindBacktickTokenKindHashTokenKindEqualsTokenKindPlusEqualsTokenKindMinusEqualsTokenKindAsteriskEqualsTokenKindAsteriskAsteriskEqualsTokenKindSlashEqualsTokenKindPercentEqualsTokenKindLessThanLessThanEqualsTokenKindGreaterThanGreaterThanEqualsTokenKindGreaterThanGreaterThanGreaterThanEqualsTokenKindAmpersandEqualsTokenKindBarEqualsTokenKindBarBarEqualsTokenKindAmpersandAmpersandEqualsTokenKindQuestionQuestionEqualsTokenKindCaretEqualsTokenKindIdentifierKindPrivateIdentifierKindJSDocCommentTextTokenKindBreakKeywordKindCaseKeywordKindCatchKeywordKindClassKeywordKindConstKeywordKindContinueKeywordKindDebuggerKeywordKindDefaultKeywordKindDeleteKeywordKindDoKeywordKindElseKeywordKindEnumKeywordKindExportKeywordKindExtendsKeywordKindFalseKeywordKindFinallyKeywordKindForKeywordKindFunctionKeywordKindIfKeywordKindImportKeywordKindInKeywordKindInstanceOfKeywordKindNewKeywordKindNullKeywordKindReturnKeywordKindSuperKeywordKindSwitchKeywordKindThisKeywordKindThrowKeywordKindTrueKeywordKindTryKeywordKindTypeOfKeywordKindVarKeywordKindVoidKeywordKindWhileKeywordKindWithKeywordKindImplementsKeywordKindInterfaceKeywordKindLetKeywordKindPackageKeywordKindPrivateKeywordKindProtectedKeywordKindPublicKeywordKindStaticKeywordKindYieldKeywordKindAbstractKeywordKindAccessorKeywordKindAsKeywordKindAssertsKeywordKindAssertKeywordKindAnyKeywordKindAsyncKeywordKindAwaitKeywordKindBooleanKeywordKindConstructorKeywordKindDeclareKeywordKindGetKeywordKindImmediateKeywordKindInferKeywordKindIntrinsicKeywordKindIsKeywordKindKeyOfKeywordKindModuleKeywordKindNamespaceKeywordKindNeverKeywordKindOutKeywordKindReadonlyKeywordKindRequireKeywordKindNumberKeywordKindObjectKeywordKindSatisfiesKeywordKindSetKeywordKindStringKeywordKindSymbolKeywordKindTypeKeywordKindUndefinedKeywordKindUniqueKeywordKindUnknownKeywordKindUsingKeywordKindFromKeywordKindGlobalKeywordKindBigIntKeywordKindOverrideKeywordKindOfKeywordKindDeferKeywordKindQualifiedNameKindComputedPropertyNameKindTypeParameterKindParameterKindDecoratorKindPropertySignatureKindPropertyDeclarationKindMethodSignatureKindMethodDeclarationKindClassStaticBlockDeclarationKindConstructorKindGetAccessorKindSetAccessorKindCallSignatureKindConstructSignatureKindIndexSignatureKindTypePredicateKindTypeReferenceKindFunctionTypeKindConstructorTypeKindTypeQueryKindTypeLiteralKindArrayTypeKindTupleTypeKindOptionalTypeKindRestTypeKindUnionTypeKindIntersectionTypeKindConditionalTypeKindInferTypeKindParenthesizedTypeKindThisTypeKindTypeOperatorKindIndexedAccessTypeKindMappedTypeKindLiteralTypeKindNamedTupleMemberKindTemplateLiteralTypeKindTemplateLiteralTypeSpanKindImportTypeKindObjectBindingPatternKindArrayBindingPatternKindBindingElementKindArrayLiteralExpressionKindObjectLiteralExpressionKindPropertyAccessExpressionKindElementAccessExpressionKindCallExpressionKindNewExpressionKindTaggedTemplateExpressionKindTypeAssertionExpressionKindParenthesizedExpressionKindFunctionExpressionKindArrowFunctionKindDeleteExpressionKindTypeOfExpressionKindVoidExpressionKindAwaitExpressionKindPrefixUnaryExpressionKindPostfixUnaryExpressionKindBinaryExpressionKindConditionalExpressionKindTemplateExpressionKindYieldExpressionKindSpreadElementKindClassExpressionKindOmittedExpressionKindExpressionWithTypeArgumentsKindAsExpressionKindNonNullExpressionKindMetaPropertyKindSyntheticExpressionKindSatisfiesExpressionKindTemplateSpanKindSemicolonClassElementKindBlockKindEmptyStatementKindVariableStatementKindExpressionStatementKindIfStatementKindDoStatementKindWhileStatementKindForStatementKindForInStatementKindForOfStatementKindContinueStatementKindBreakStatementKindReturnStatementKindWithStatementKindSwitchStatementKindLabeledStatementKindThrowStatementKindTryStatementKindDebuggerStatementKindVariableDeclarationKindVariableDeclarationListKindFunctionDeclarationKindClassDeclarationKindInterfaceDeclarationKindTypeAliasDeclarationKindEnumDeclarationKindModuleDeclarationKindModuleBlockKindCaseBlockKindNamespaceExportDeclarationKindImportEqualsDeclarationKindImportDeclarationKindImportClauseKindNamespaceImportKindNamedImportsKindImportSpecifierKindExportAssignmentKindExportDeclarationKindNamedExportsKindNamespaceExportKindExportSpecifierKindMissingDeclarationKindExternalModuleReferenceKindJsxElementKindJsxSelfClosingElementKindJsxOpeningElementKindJsxClosingElementKindJsxFragmentKindJsxOpeningFragmentKindJsxClosingFragmentKindJsxAttributeKindJsxAttributesKindJsxSpreadAttributeKindJsxExpressionKindJsxNamespacedNameKindCaseClauseKindDefaultClauseKindHeritageClauseKindCatchClauseKindImportAttributesKindImportAttributeKindPropertyAssignmentKindShorthandPropertyAssignmentKindSpreadAssignmentKindEnumMemberKindSourceFileKindJSDocTypeExpressionKindJSDocNameReferenceKindJSDocAllTypeKindJSDocNullableTypeKindJSDocNonNullableTypeKindJSDocOptionalTypeKindJSDocVariadicTypeKindJSDocKindJSDocTextKindJSDocTypeLiteralKindJSDocSignatureKindJSDocLinkKindJSDocLinkCodeKindJSDocLinkPlainKindJSDocUnknownTagKindJSDocAugmentsTagKindJSDocImplementsTagKindJSDocDeprecatedTagKindJSDocPublicTagKindJSDocPrivateTagKindJSDocProtectedTagKindJSDocReadonlyTagKindJSDocOverrideTagKindJSDocCallbackTagKindJSDocOverloadTagKindJSDocParameterTagKindJSDocReturnTagKindJSDocThisTagKindJSDocTypeTagKindJSDocTemplateTagKindJSDocTypedefTagKindJSDocSeeTagKindJSDocPropertyTagKindJSDocThrowsTagKindJSDocSatisfiesTagKindJSDocImportTagKindSyntaxListKindJSTypeAliasDeclarationKindJSImportDeclarationKindNotEmittedStatementKindPartiallyEmittedExpressionKindSyntheticReferenceExpressionKindNotEmittedTypeElementKindCount"
 
-var _Kind_index = [...]uint16{0, 11, 24, 51, 77, 94, 114, 138, 165, 183, 200, 217, 228, 253, 281, 314, 330, 348, 364, 382, 401, 419, 438, 458, 479, 491, 509, 527, 541, 561, 578, 600, 620, 643, 669, 690, 716, 743, 775, 801, 814, 828, 845, 870, 884, 900, 917, 936, 961, 992, 1034, 1052, 1064, 1078, 1098, 1112, 1139, 1154, 1171, 1185, 1196, 1221, 1238, 1251, 1266, 1285, 1305, 1328, 1359, 1379, 1401, 1432, 1469, 1517, 1541, 1559, 1580, 1613, 1644, 1664, 1678, 1699, 1724, 1740, 1755, 1771, 1787, 1803, 1822, 1841, 1859, 1876, 1889, 1904, 1919, 1936, 1954, 1970, 1988, 2002, 2021, 2034, 2051, 2064, 2085, 2099, 2114, 2131, 2147, 2164, 2179, 2195, 2210, 2224, 2241, 2255, 2270, 2286, 2301, 2322, 2342, 2356, 2374, 2392, 2412, 2429, 2446, 2462, 2481, 2500, 2513, 2531, 2548, 2562, 2578, 2594, 2612, 2634, 2652, 2666, 2686, 2702, 2722, 2735, 2751, 2768, 2788, 2804, 2818, 2837, 2855, 2872, 2889, 2909, 2923, 2940, 2957, 2972, 2992, 3009, 3027, 3043, 3058, 3075, 3092, 3111, 3124, 3140, 3157, 3181, 3198, 3211, 3224, 3245, 3268, 3287, 3308, 3339, 3354, 3369, 3384, 3401, 3423, 3441, 3458, 3475, 3491, 3510, 3523, 3538, 3551, 3564, 3580, 3592, 3605, 3625, 3644, 3657, 3678, 3690, 3706, 3727, 3741, 3756, 3776, 3799, 3826, 3840, 3864, 3887, 3905, 3931, 3958, 3986, 4013, 4031, 4048, 4076, 4103, 4130, 4152, 4169, 4189, 4209, 4227, 4246, 4271, 4297, 4317, 4342, 4364, 4383, 4400, 4419, 4440, 4471, 4487, 4508, 4524, 4547, 4570, 4586, 4611, 4620, 4638, 4659, 4682, 4697, 4712, 4730, 4746, 4764, 4782, 4803, 4821, 4840, 4857, 4876, 4896, 4914, 4930, 4951, 4974, 5001, 5024, 5044, 5068, 5092, 5111, 5132, 5147, 5160, 5190, 5217, 5238, 5254, 5273, 5289, 5308, 5328, 5349, 5365, 5384, 5403, 5425, 5452, 5466, 5491, 5512, 5533, 5548, 5570, 5592, 5608, 5625, 5647, 5664, 5685, 5699, 5716, 5734, 5749, 5769, 5788, 5810, 5841, 5861, 5875, 5889, 5912, 5934, 5950, 5971, 5995, 6016, 6037, 6046, 6059, 6079, 6097, 6110, 6127, 6145, 6164, 6184, 6206, 6228, 6246, 6265, 6286, 6306, 6326, 6346, 6366, 6387, 6405, 6421, 6437, 6457, 6476, 6491, 6511, 6529, 6550, 6568, 6582, 6608, 6631, 6654, 6684, 6716, 6741, 6750}
+var _Kind_index = [...]uint16{
+	0,
+	11,
+	24,
+	51,
+	77,
+	94,
+	114,
+	138,
+	165,
+	183,
+	200,
+	217,
+	230,
+	241,
+	266,
+	294,
+	327,
+	343,
+	361,
+	377,
+	395,
+	414,
+	432,
+	451,
+	471,
+	492,
+	504,
+	522,
+	540,
+	554,
+	574,
+	591,
+	613,
+	633,
+	656,
+	682,
+	703,
+	729,
+	756,
+	788,
+	814,
+	827,
+	841,
+	858,
+	883,
+	897,
+	913,
+	930,
+	949,
+	974,
+	1005,
+	1047,
+	1065,
+	1077,
+	1091,
+	1111,
+	1125,
+	1152,
+	1167,
+	1184,
+	1198,
+	1209,
+	1234,
+	1251,
+	1264,
+	1279,
+	1298,
+	1318,
+	1341,
+	1372,
+	1392,
+	1414,
+	1445,
+	1482,
+	1530,
+	1554,
+	1572,
+	1593,
+	1626,
+	1657,
+	1677,
+	1691,
+	1712,
+	1737,
+	1753,
+	1768,
+	1784,
+	1800,
+	1816,
+	1835,
+	1854,
+	1872,
+	1889,
+	1902,
+	1917,
+	1932,
+	1949,
+	1967,
+	1983,
+	2001,
+	2015,
+	2034,
+	2047,
+	2064,
+	2077,
+	2098,
+	2112,
+	2127,
+	2144,
+	2160,
+	2177,
+	2192,
+	2208,
+	2223,
+	2237,
+	2254,
+	2268,
+	2283,
+	2299,
+	2314,
+	2335,
+	2355,
+	2369,
+	2387,
+	2405,
+	2425,
+	2442,
+	2459,
+	2475,
+	2494,
+	2513,
+	2526,
+	2544,
+	2561,
+	2575,
+	2591,
+	2607,
+	2625,
+	2647,
+	2665,
+	2679,
+	2699,
+	2715,
+	2735,
+	2748,
+	2764,
+	2781,
+	2801,
+	2817,
+	2831,
+	2850,
+	2868,
+	2885,
+	2902,
+	2922,
+	2936,
+	2953,
+	2970,
+	2985,
+	3005,
+	3022,
+	3040,
+	3056,
+	3071,
+	3088,
+	3105,
+	3124,
+	3137,
+	3153,
+	3170,
+	3194,
+	3211,
+	3224,
+	3237,
+	3258,
+	3281,
+	3300,
+	3321,
+	3352,
+	3367,
+	3382,
+	3397,
+	3414,
+	3436,
+	3454,
+	3471,
+	3488,
+	3504,
+	3523,
+	3536,
+	3551,
+	3564,
+	3577,
+	3593,
+	3605,
+	3618,
+	3638,
+	3657,
+	3670,
+	3691,
+	3703,
+	3719,
+	3740,
+	3754,
+	3769,
+	3789,
+	3812,
+	3839,
+	3853,
+	3877,
+	3900,
+	3918,
+	3944,
+	3971,
+	3999,
+	4026,
+	4044,
+	4061,
+	4089,
+	4116,
+	4143,
+	4165,
+	4182,
+	4202,
+	4222,
+	4240,
+	4259,
+	4284,
+	4310,
+	4330,
+	4355,
+	4377,
+	4396,
+	4413,
+	4432,
+	4453,
+	4484,
+	4500,
+	4521,
+	4537,
+	4560,
+	4583,
+	4599,
+	4624,
+	4633,
+	4651,
+	4672,
+	4695,
+	4710,
+	4725,
+	4743,
+	4759,
+	4777,
+	4795,
+	4816,
+	4834,
+	4853,
+	4870,
+	4889,
+	4909,
+	4927,
+	4943,
+	4964,
+	4987,
+	5014,
+	5037,
+	5057,
+	5081,
+	5105,
+	5124,
+	5145,
+	5160,
+	5173,
+	5203,
+	5230,
+	5251,
+	5267,
+	5286,
+	5302,
+	5321,
+	5341,
+	5362,
+	5378,
+	5397,
+	5416,
+	5438,
+	5465,
+	5479,
+	5504,
+	5525,
+	5546,
+	5561,
+	5583,
+	5605,
+	5621,
+	5638,
+	5660,
+	5677,
+	5698,
+	5712,
+	5729,
+	5747,
+	5762,
+	5782,
+	5801,
+	5823,
+	5854,
+	5874,
+	5888,
+	5902,
+	5925,
+	5947,
+	5963,
+	5984,
+	6008,
+	6029,
+	6050,
+	6059,
+	6072,
+	6092,
+	6110,
+	6123,
+	6140,
+	6158,
+	6177,
+	6197,
+	6219,
+	6241,
+	6259,
+	6278,
+	6299,
+	6319,
+	6339,
+	6359,
+	6379,
+	6400,
+	6418,
+	6434,
+	6450,
+	6470,
+	6489,
+	6504,
+	6524,
+	6542,
+	6563,
+	6581,
+	6595,
+	6621,
+	6644,
+	6667,
+	6697,
+	6729,
+	6754,
+	6763,
+}
 
 func (i Kind) String() string {
 	idx := int(i) - 0

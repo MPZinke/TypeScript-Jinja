@@ -3230,6 +3230,10 @@ func (p *Printer) emitExpression(node *ast.Expression, precedence ast.OperatorPr
 		p.emitBigIntLiteral(node.AsBigIntLiteral())
 	case ast.KindStringLiteral:
 		p.emitStringLiteral(node.AsStringLiteral())
+	case ast.KindJinjaVariable:
+		state := p.enterNode(node)
+		p.emitLiteral(node, getLiteralTextFlagsNone)
+		p.exitNode(node, state)
 	case ast.KindRegularExpressionLiteral:
 		p.emitRegularExpressionLiteral(node.AsRegularExpressionLiteral())
 	case ast.KindNoSubstitutionTemplateLiteral:

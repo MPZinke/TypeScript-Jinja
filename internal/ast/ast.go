@@ -270,6 +270,8 @@ func (n *Node) Text() string {
 		return n.AsNumericLiteral().Text
 	case KindBigIntLiteral:
 		return n.AsBigIntLiteral().Text
+	case KindJinjaVariable:
+		return n.AsJinjaVariable().Text
 	case KindMetaProperty:
 		return n.AsMetaProperty().Name().Text()
 	case KindNoSubstitutionTemplateLiteral:
@@ -2766,6 +2768,8 @@ func createToken(kind Kind, file *SourceFile, pos, end int, flags TokenFlags) *N
 		return file.tokenFactory.NewBigIntLiteral(text, flags)
 	case KindStringLiteral:
 		return file.tokenFactory.NewStringLiteral(text, flags)
+	case KindJinjaVariable:
+		return file.tokenFactory.NewJinjaVariable(text, flags)
 	case KindJsxText, KindJsxTextAllWhiteSpaces:
 		return file.tokenFactory.NewJsxText(text, kind == KindJsxTextAllWhiteSpaces)
 	case KindRegularExpressionLiteral:
