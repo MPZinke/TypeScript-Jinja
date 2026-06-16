@@ -309,6 +309,7 @@ func GetOperatorPrecedence(nodeKind Kind, operatorKind Kind, flags OperatorPrece
 		KindNumericLiteral,
 		KindBigIntLiteral,
 		KindStringLiteral,
+		KindJinjaVariable,
 		KindArrayLiteralExpression,
 		KindObjectLiteralExpression,
 		KindFunctionExpression,

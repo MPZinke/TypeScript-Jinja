@@ -862,6 +862,18 @@ func (s *Scanner) Scan() ast.Kind {
 				s.token = ast.KindCaretToken
 			}
 		case '{':
+			if s.charAt(1) == '{' {
+				for increment := 2; increment < s.end-s.pos; increment++ {
+					if s.charAt(increment) == '\n' {
+						break
+					}
+					if s.charAt(increment) == '}' && s.charAt(increment+1) == '}' {
+						s.pos += increment + 2
+						s.token = ast.KindJinjaVariable
+						return s.token
+					}
+				}
+			}
 			s.pos++
 			s.token = ast.KindOpenBraceToken
 		case '|':

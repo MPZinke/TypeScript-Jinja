@@ -5563,7 +5563,7 @@ func (p *Parser) parsePrimaryExpression() *ast.Expression {
 			p.reScanTemplateToken(false /*isTaggedTemplate*/)
 		}
 		fallthrough
-	case ast.KindNumericLiteral, ast.KindBigIntLiteral, ast.KindStringLiteral:
+	case ast.KindNumericLiteral, ast.KindBigIntLiteral, ast.KindStringLiteral, ast.KindJinjaVariable:
 		return p.parseLiteralExpression(false /*intern*/)
 	case ast.KindThisKeyword, ast.KindSuperKeyword, ast.KindNullKeyword, ast.KindTrueKeyword, ast.KindFalseKeyword:
 		return p.parseKeywordExpression()
@@ -5798,6 +5798,8 @@ func (p *Parser) parseLiteralExpression(intern bool) *ast.Node {
 	switch p.token {
 	case ast.KindStringLiteral:
 		result = p.factory.NewStringLiteral(text, tokenFlags)
+	case ast.KindJinjaVariable:
+		result = p.factory.NewJinjaVariable(text, tokenFlags)
 	case ast.KindNumericLiteral:
 		result = p.factory.NewNumericLiteral(text, tokenFlags)
 	case ast.KindBigIntLiteral:
@@ -6056,7 +6058,7 @@ func (p *Parser) parseSemicolon() bool {
 }
 
 func (p *Parser) isLiteralPropertyName() bool {
-	return tokenIsIdentifierOrKeyword(p.token) || p.token == ast.KindStringLiteral || p.token == ast.KindNumericLiteral || p.token == ast.KindBigIntLiteral
+	return tokenIsIdentifierOrKeyword(p.token) || p.token == ast.KindStringLiteral || p.token == ast.KindJinjaVariable || p.token == ast.KindNumericLiteral || p.token == ast.KindBigIntLiteral
 }
 
 func (p *Parser) isStartOfStatement() bool {
@@ -6146,7 +6148,7 @@ func (p *Parser) scanStartOfDeclaration() bool {
 			return p.token == ast.KindOpenBraceToken || p.token == ast.KindIdentifier || p.token == ast.KindExportKeyword
 		case ast.KindImportKeyword:
 			p.nextToken()
-			return p.token == ast.KindDeferKeyword || p.token == ast.KindStringLiteral || p.token == ast.KindAsteriskToken || p.token == ast.KindOpenBraceToken || tokenIsIdentifierOrKeyword(p.token)
+			return p.token == ast.KindDeferKeyword || p.token == ast.KindStringLiteral || p.token == ast.KindJinjaVariable || p.token == ast.KindAsteriskToken || p.token == ast.KindOpenBraceToken || tokenIsIdentifierOrKeyword(p.token)
 		case ast.KindExportKeyword:
 			p.nextToken()
 			if p.token == ast.KindEqualsToken || p.token == ast.KindAsteriskToken || p.token == ast.KindOpenBraceToken ||
@@ -6192,7 +6194,7 @@ func (p *Parser) isStartOfExpression() bool {
 func (p *Parser) isStartOfLeftHandSideExpression() bool {
 	switch p.token {
 	case ast.KindThisKeyword, ast.KindSuperKeyword, ast.KindNullKeyword, ast.KindTrueKeyword, ast.KindFalseKeyword,
-		ast.KindNumericLiteral, ast.KindBigIntLiteral, ast.KindStringLiteral, ast.KindNoSubstitutionTemplateLiteral, ast.KindTemplateHead,
+		ast.KindNumericLiteral, ast.KindBigIntLiteral, ast.KindStringLiteral, ast.KindJinjaVariable, ast.KindNoSubstitutionTemplateLiteral, ast.KindTemplateHead,
 		ast.KindOpenParenToken, ast.KindOpenBracketToken, ast.KindOpenBraceToken, ast.KindFunctionKeyword, ast.KindClassKeyword,
 		ast.KindNewKeyword, ast.KindSlashToken, ast.KindSlashEqualsToken, ast.KindIdentifier:
 		return true
@@ -6266,7 +6268,7 @@ func (p *Parser) nextTokenIsIdentifierOnSameLine() bool {
 
 func (p *Parser) nextTokenIsIdentifierOrStringLiteralOnSameLine() bool {
 	p.nextToken()
-	return (p.isIdentifier() || p.token == ast.KindStringLiteral) && !p.hasPrecedingLineBreak()
+	return (p.isIdentifier() || p.token == ast.KindStringLiteral || p.token == ast.KindJinjaVariable) && !p.hasPrecedingLineBreak()
 }
 
 // Ignore strict mode flag because we will report an error in type checker instead.
@@ -6290,7 +6292,7 @@ func (p *Parser) isBindingIdentifier() bool {
 }
 
 func (p *Parser) isImportAttributeName() bool {
-	return tokenIsIdentifierOrKeyword(p.token) || p.token == ast.KindStringLiteral
+	return tokenIsIdentifierOrKeyword(p.token) || p.token == ast.KindStringLiteral || p.token == ast.KindJinjaVariable
 }
 
 func (p *Parser) isBinaryOperator() bool {
@@ -6367,7 +6369,8 @@ func (p *Parser) nextIsUsingKeywordThenBindingIdentifierOrStartOfObjectDestructu
 }
 
 func (p *Parser) nextTokenIsTokenStringLiteral() bool {
-	return p.nextToken() == ast.KindStringLiteral
+	tok := p.nextToken()
+	return tok == ast.KindStringLiteral || tok == ast.KindJinjaVariable
 }
 
 func (p *Parser) setContextFlags(flags ast.NodeFlags, value bool) {
